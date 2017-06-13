@@ -11,6 +11,7 @@ varexo ea;
 // Parameters
 parameters alpha beta sigma phi eps theta rhoa fipi fiy sigmaa h X omega bigt lambda gammaf gammab;
 
+// Calibration
 alpha = 0.33;
 beta = 0.99;
 sigma = 1;
@@ -55,7 +56,6 @@ check;
 
 // Perturbation analysis
 shocks;
-
 // A Technological shock occurs
 var ea; stderr sigmaa;
 end;
