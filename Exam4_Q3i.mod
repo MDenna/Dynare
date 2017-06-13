@@ -25,7 +25,8 @@ sigmaa = 0.5;
 h = 0.5;
 omega = 0.5;
 X = 1/(1+h);
-//Internal Parameters
+
+// Internal Parameters
 bigt = (1-alpha)/(1-alpha+alpha*eps);
 lambda = ((1-theta)*(1-beta*theta))/(theta*(1+theta*beta*omega))*bigt;
 gammaf = beta/(1+theta*beta*omega);
@@ -40,6 +41,7 @@ yn = (sigma*h*(1-alpha))/(sigma*(1-alpha)+(alpha+phi)*(1-h))*yn(-1) - ((1-h)*(1+
 a = rhoa*a(-1)+ea;
 ygap = (1-X)*ygap(-1) + X*ygap(+1)-(1/sigma)*((1-h)/(1+h))*(i-pi(+1)-rn);
 rn = (sigma/(1-h))*(yn(+1)-yn)- (sigma*h)/(1-h)*(yn-yn(-1));
+
 // I) Taylor Rule 
 i = fipi*pi + fiy*ygap;
 
@@ -53,6 +55,7 @@ check;
 
 // Perturbation analysis
 shocks;
+
 // A Technological shock occurs
 var ea; stderr sigmaa;
 end;
