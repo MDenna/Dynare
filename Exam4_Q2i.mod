@@ -1,3 +1,7 @@
+// Matthew Dennahower
+// 103728472
+// Monetary Theory - Exam 4
+// Question 2 - Part I
 
 // Endogenous Variables
 var pi ygap y yn a rn u i;
